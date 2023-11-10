@@ -1,0 +1,627 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #3e37a6;
+}
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.head_text__lines {
+    background-image: url(assets/icons/lines_under_logo_title.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8px;
+    width: 380px;
+    margin: auto;
+}
+
+.logo_block {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+    height: 136px;
+}
+
+.head_feedback_link {
+    display: flex;
+    align-items: center;
+    width: 310px;
+}
+
+.head_text {
+    white-space: nowrap;
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
+
+.head_text span {
+    display: block;
+}
+
+.head_feedback {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 36px;
+    white-space: nowrap;
+    font-size: 36px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+    transition: color 0.2s;
+    margin: 0;
+}
+
+.head_feedback span {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.head_feedback:hover {
+    background-color: white;
+    color: #3e37a6;
+    transition: all 0.2s;
+}
+.head_menu {
+    background-color: #c4d6f1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 45vw;
+}
+
+.menu a {
+    color: black;
+    transition: all 0.2s;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu a:hover {
+    box-shadow: 0px 1px 0px 0px rgb(88, 88, 88);
+    color: rgb(88, 88, 88);
+}
+
+.about {
+    background-image: url(assets/icons/about_back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 50px 170px 50px;
+    box-sizing: border-box;
+}
+
+.about_title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    font-size: 36px;
+    line-height: 38px;
+    color: #090274;
+}
+
+.about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 114px;
+    margin-top: 50px;
+}
+
+.about_leftpart_img {
+    width: 100%;
+    background-color: #b3b3b3;
+}
+
+.about_rightpart {
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.about_rightpart_text_begin {
+    color: #090274;
+}
+
+.scinceproblem {
+    background-image: url(assets/icons/scienceproblem_back.svg);
+    background-color: #5f58c4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    padding-bottom: 170px;
+    box-sizing: border-box;
+    padding: 90px 50px 170px 50px;
+}
+
+.scinceproblem_title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.scinceproblem_main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    gap: 114px;
+}
+
+.scinceproblem_leftpart {
+    width: 50%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(84, 83, 83, 0.25);
+}
+
+.scinceproblem_rightpart_img {
+    width: 100%;
+    background-color: #56565a;
+}
+
+.edition {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 50px 100px 170px 100px;
+}
+
+.edition_title {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 39px;
+    text-align: center;
+    color: #090274;
+}
+
+.editor_block {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    margin: 90px 0 0 0;
+}
+.editor_block:nth-child(odd) {
+    justify-content: end;
+    text-align: end;
+}
+
+.editor_img {
+    min-width: 200px;
+    min-height: 200px;
+    border-radius: 50%;
+    background: #7a7a7a;
+}
+
+.editor {
+    width: 60%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.editor_blue {
+    color: #090274;
+    font-size: 28px;
+}
+
+.partners {
+    background-color: #201c58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 50px 130px 50px;
+}
+
+.partners_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.line1 {
+    width: 25vw;
+    border: none;
+    border-top: 3px solid #ffffff;
+}
+
+.partners_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: 90px;
+}
+
+.partner_block {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.partner {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.partner_img {
+    width: 500px;
+}
+
+footer {
+    border-top: 7px solid #ffffff;
+    padding: 10px 20px;
+    background-color: #201c58;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer_text_link span {
+    text-align: end;
+}
+
+.footer_links {
+    width: 310px;
+    font-weight: 400;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_links_text {
+    text-align: right;
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+    color: white;
+}
+.footer_links_text1 {
+    margin-top: 10px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+.footer_links_text a {
+    color: white;
+}
+.footer_links_text1 a {
+    color: white;
+}
+.footer_logo_block {
+    display: flex;
+    justify-content: center;
+    width: 310px;
+    height: 136px;
+}
+.hamburger-menu {
+    display: none;
+}
+.year_img_hor {
+    display: none;
+}
+@media screen and (max-width: 1200px) {
+    .head_feedback_link {
+        display: none;
+    }
+
+    .head {
+        justify-content: space-around;
+    }
+    .head_text {
+        text-align: end;
+    }
+    .head_text__lines {
+        display: none;
+    }
+    .logo_block {
+        width: auto;
+    }
+    .about_main,
+    .scinceproblem_main {
+        gap: 5%;
+    }
+    .about_rightpart,
+    .scinceproblem_leftpart {
+        font-size: 16px;
+        font-weight: 500;
+        width: 90%;
+    }
+    .about_title,
+    .scinceproblem_title,
+    .edition_title,
+    .partners_title {
+        font-size: 32px;
+    }
+    .partners_main {
+        gap: 50px;
+    }
+
+    .footer_logo_block {
+        width: 130px;
+    }
+    .footer {
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 960px) {
+    .about_title,
+    .scinceproblem_title,
+    .edition_title,
+    .partners_title {
+        font-size: 28px;
+    }
+    .about,
+    .scinceproblem,
+    .partners,
+    .edition {
+        padding: 50px 90px 100px 90px;
+        box-sizing: border-box;
+    }
+    .about {
+        background-position: 46% 0;
+    }
+    .about_main {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .scinceproblem_main {
+        flex-direction: column-reverse;
+        row-gap: 60px;
+    }
+    .about_leftpart,
+    .scinceproblem_rightpart {
+        display: flex;
+        justify-content: center;
+    }
+    .about_leftpart_img,
+    .scinceproblem_rightpart_img {
+        width: 70%;
+    }
+    .scinceproblem {
+        background-position: 50% 0%;
+    }
+    .editor_block {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .editor_block:nth-child(odd) {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .partners_main {
+        gap: 50px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .partner {
+        font-size: 24px;
+    }
+
+    .line1 {
+        width: 18vw;
+    }
+    .partners_title {
+        gap: 50px;
+    }
+    .footer_links_text,
+    .footer_links_text1 {
+        font-size: 14px;
+    }
+    .head_menu,
+    .head_text__lines {
+        display: none;
+    }
+    .headerall {
+        display: flex;
+        justify-content: center;
+    }
+    .head {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .head_text {
+        font-size: 3.2vw;
+        text-align: center;
+    }
+
+    .logo_block {
+        display: flex;
+        align-items: center;
+    }
+    .logo_block img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-right: 20px;
+        box-sizing: border-box;
+        width: 130px;
+    }
+    .editor_blue {
+        font-size: 24px;
+    }
+    .editor {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .editor_img {
+        min-width: 150px;
+        min-height: 150px;
+    }
+    .partner_img {
+        max-width: 400px;
+    }
+    .partner_img:nth-child(odd) {
+        max-width: 450px;
+    }
+    .head_text {
+        font-size: 24px;
+    }
+    .menu__btn {
+        width: 35px;
+        min-height: 20px;
+    }
+
+    .span-before,
+    .span-mid,
+    .span-after {
+        min-width: 35px;
+        height: 2px;
+    }
+    #menu__toggle:checked ~ .menu__btn .span-mid {
+        min-width: 32px;
+    }
+    #menu__toggle:checked ~ .menu__btn .span-before {
+        min-width: 32px;
+    }
+    #menu__toggle:checked ~ .menu__btn .span-after {
+        min-width: 32px;
+    }
+    .head_text span:first-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 670px) {
+    .editor_block {
+        gap: 30px;
+    }
+    .head {
+        height: 90px;
+        padding: 0 0 0 32px;
+        box-sizing: border-box;
+    }
+    .logo_block img {
+        width: 90px;
+        height: 90px;
+    }
+    .footer_logo_block {
+        height: auto;
+    }
+    .footer_logo_block img {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media screen and (max-width: 570px) {
+    .head_text_link {
+        display: none;
+    }
+    .partner_img {
+        max-width: 300px;
+    }
+    .partner_img:nth-child(odd) {
+        max-width: 350px;
+    }
+    .line1 {
+        display: none;
+    }
+    .about,
+    .scinceproblem,
+    .partners,
+    .edition {
+        padding: 50px 40px 100px 40px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 420px) {
+    .partners_main {
+        margin-top: 50px;
+    }
+    .partner_img {
+        max-width: 200px;
+    }
+    .partner_img:nth-child(odd) {
+        max-width: 300px;
+    }
+}
